@@ -1,5 +1,5 @@
 ---
-title: "creating_dronesr"
+title: "Creating Dronesr"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{creating_dronesr}
@@ -12,6 +12,8 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+
+options(rmarkdown.html_vignette.check_title = FALSE)
 ```
 
 ```{r setup}
@@ -73,3 +75,43 @@ For larger results sets such as this the Lens will email the dataset link to you
 ## Additional Data
 
 The lens is a rich source of additional data that is not available in other databases.
+
+### Literature Cited by Patents
+
+To obtain the cited literature choose the `Cited Works` tab next to `Patents`. This reveals that there are 18,747 cited articles in the patent data. Choose the `export` button and change the number of records to 50,000, give the file a name and export it. This becomes `drones_pat_citedlit` in the raw folder in dronesr.
+
+```{r citedlit, echo=FALSE, fig.align='center', fig.cap="Export the Cited Literature in Cited Works"}
+knitr::include_graphics("citedlit.png")
+```
+
+## Patent Citations
+
+We can obtain the Patents Cited by our core dataset by choosing the `Cites Patents` tab in the results. For ease of reference we will use the export button and save then as cited patents as in Figure \@ref(fig:citedpat).
+
+```{r citedpat, echo=FALSE, fig.align='center', fig.cap="Export the Cited Literature in Cited Works"}
+knitr::include_graphics("citedpat.png")
+```
+
+We then want to move over to the `Cited by Patents` and we download the results using the Export button and call them `citingpat.csv`.
+
+```{r citingpat, echo=FALSE, fig.align='center', fig.cap="Export the Cited Literature in Cited Works"}
+knitr::include_graphics("citingpat.png")
+```
+
+### Scientific Literature
+
+We will normally want to obtain the scientific literature on a topic of interest to inform patent analysis. 
+
+We turn to the lens scholarly interface to search the literature as in Figure \@ref(fig:litsearch). As with the patent data we will search all fields. But take the time to check out the options that can be used here. 
+
+```{r litsearch, echo=FALSE, fig.align='center', fig.cap="Use Lens Scholarly to Search for Literature"}
+knitr::include_graphics("litsearch.png")
+```
+
+```{r lit, echo=FALSE, fig.align='center', fig.cap="Use Lens Scholarly to Search for Literature"}
+knitr::include_graphics("lit.png")
+```
+
+This gives us 45,256 results as we see above. We then use export to download the file to lit stored in the data/raw folder. 
+
+The literature collection is publicly accessible at [https://www.lens.org/lens/search/scholar/list?collectionId=199039](https://www.lens.org/lens/search/scholar/list?collectionId=199039).
