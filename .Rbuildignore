@@ -1,2 +1,10 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^ignore
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
+^data
+^LICENSE\.md$
+^README\.Rmd$

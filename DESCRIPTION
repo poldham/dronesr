@@ -16,3 +16,7 @@ Imports:
     magrittr,
     osfr,
     usethis
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
