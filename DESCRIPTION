@@ -1,6 +1,6 @@
 Package: dronesr
 Type: Package
-Title: Scientfic and Patent Datasets on Drones for Analytics Training
+Title: Scientific and Patent Datasets on Drones for Analytics Training
 Version: 0.1.0
 Author: Paul Oldham
 Maintainer: Paul Oldham <pauloldham@manchester.ac.uk>
@@ -15,10 +15,7 @@ RoxygenNote: 7.1.2
 Imports: 
     magrittr,
     osfr,
-    usethis,
-    dplyr,
-    tidyr,
-    stringr
+    usethis
 Suggests: 
     rmarkdown,
     knitr

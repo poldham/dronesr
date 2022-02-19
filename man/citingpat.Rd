@@ -3,7 +3,7 @@
 \docType{data}
 \name{citingpat}
 \alias{citingpat}
-\title{citing patents dataset}
+\title{patent documents citing the core pat dataset}
 \format{
 A data frame with 12261 rows and 32 variables:
 \describe{

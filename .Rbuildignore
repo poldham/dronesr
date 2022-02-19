@@ -8,3 +8,4 @@
 ^data
 ^LICENSE\.md$
 ^README\.Rmd$
+pkgdown

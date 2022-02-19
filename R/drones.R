@@ -37,7 +37,7 @@
 #' @source \url{https://www.lens.org/}
 "applicants"
 
-#' cited patents dataset
+#' patent documents cited in the core pat dataset
 #'
 #' A dataset of 27578 rows of patent documented cited in the core patent (pat) set.
 #'
@@ -80,7 +80,7 @@
 "citedpat"
 
 
-#' citing patents dataset
+#' patent documents citing the core pat dataset
 #'
 #' A dataset of patent documents that cite the core patent (pat).
 #' Citing patents are later filings that cite the core set.
@@ -347,3 +347,42 @@
 #' }
 #' @source \url{https://www.lens.org/}
 "lit"
+
+#' literature cited in the core patent dataset (npl)
+#'
+#' Scientific literature cited in the pat dataset.
+#'
+#' @format A data frame with 18747 rows and 29 variables:
+#' \describe{
+#' \item{lens_id}{}
+#' \item{title}{}
+#' \item{date_published}{}
+#' \item{publication_year}{}
+#' \item{publication_type}{}
+#' \item{source_title}{}
+#' \item{issns}{}
+#' \item{publisher}{}
+#' \item{source_country}{}
+#' \item{authors}{}
+#' \item{abstract}{}
+#' \item{volume}{}
+#' \item{issue_number}{}
+#' \item{start_page}{}
+#' \item{end_page}{}
+#' \item{fields_of_study}{}
+#' \item{keywords}{}
+#' \item{mesh_terms}{}
+#' \item{chemicals}{}
+#' \item{funding}{}
+#' \item{source_urls}{}
+#' \item{external_url}{}
+#' \item{pmid}{}
+#' \item{doi}{}
+#' \item{microsoft_academic_id}{}
+#' \item{pmcid}{}
+#' \item{citing_patents_count}{}
+#' \item{references}{}
+#' \item{citing_works_count}{}
+#' }
+#' @source \url{https://www.lens.org/}
+"npl"
