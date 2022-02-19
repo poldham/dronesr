@@ -1,4 +1,4 @@
-#' Download Drones Literature and Patent datasets
+#' Download csv files for the Literature and Patent datasets
 #' @description Download folders containing scientific publications and patent
 #'   data for drones from the open science framework project folder
 #'   \url{https://osf.io/jr87e/}.
