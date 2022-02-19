@@ -1,7 +1,6 @@
 ---
 output: github_document
 ---
-<img src="man/figures/logo.png" align="left" />
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
@@ -102,3 +101,5 @@ drones_download(data = "lit", dest = "dronesr_data")
 
 drones_download(data = "pat", dest = "dronesr_data")
 ```
+
+That's all for now.

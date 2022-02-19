@@ -135,3 +135,5 @@ drones_download(data = "lit", dest = "dronesr_data")
 
 drones_download(data = "pat", dest = "dronesr_data")
 ```
+
+That’s all for now.
