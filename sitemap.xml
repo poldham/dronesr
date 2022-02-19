@@ -19,10 +19,61 @@
     <loc>https://poldham.github.io/dronesr/index.html</loc>
   </url>
   <url>
+    <loc>https://poldham.github.io/dronesr/reference/applicants.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/applicants_cleaned.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/applicants_ranked.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/citedpat.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/citingpat.html</loc>
+  </url>
+  <url>
     <loc>https://poldham.github.io/dronesr/reference/drones_download.html</loc>
   </url>
   <url>
     <loc>https://poldham.github.io/dronesr/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/inventors.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/inventors_cleaned.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/ipc.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/ipc_count.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/lit.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/lit_abstract.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/lit_title.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/lit_title_nouns.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/pat.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/pat_abstract.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/pat_title.html</loc>
+  </url>
+  <url>
+    <loc>https://poldham.github.io/dronesr/reference/pat_title_nouns.html</loc>
   </url>
   <url>
     <loc>https://poldham.github.io/dronesr/reference/pipe.html</loc>
