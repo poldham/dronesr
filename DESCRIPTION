@@ -15,7 +15,10 @@ RoxygenNote: 7.1.2
 Imports: 
     magrittr,
     osfr,
-    usethis
+    usethis,
+    dplyr,
+    tidyr,
+    stringr
 Suggests: 
     rmarkdown,
     knitr

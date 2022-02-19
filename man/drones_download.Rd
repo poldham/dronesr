@@ -2,7 +2,7 @@
 % Please edit documentation in R/drones_download.R
 \name{drones_download}
 \alias{drones_download}
-\title{Download Drones Literature and Patent datasets}
+\title{Download csv files for the Literature and Patent datasets}
 \source{
 The Lens Scholarly and Patent databases at
   \url{https://www.lens.org/}.
