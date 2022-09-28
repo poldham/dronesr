@@ -5,7 +5,7 @@
 \alias{applicants}
 \title{applicants dataset}
 \format{
-A data frame with 31126 rows and 3 variables:
+A data frame with 49411 rows and 2 variables:
 \describe{
 \item{lens_id}{}
 \item{applicants}{}
@@ -18,6 +18,9 @@ A data frame with 31126 rows and 3 variables:
 applicants
 }
 \description{
-A ranked dataset of cleaned applicant names.
+A dataset of applicant names that have been cleaned in VantagePoint
+based on a shared priority number and then shared inventor name.
+The separator for names in the records is "|" not ";;" as in the raw
+Lens data.
 }
 \keyword{datasets}

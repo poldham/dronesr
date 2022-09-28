@@ -27,7 +27,7 @@ Download folders containing scientific publications and patent
   \url{https://osf.io/jr87e/}.
 }
 \examples{
-drones_download(data = "all", dest = "data", conflicts = "overwrite"),
+\dontrun{drones_download(data = "all", dest = "data", conflicts = "overwrite"),
 drones_download(data = "lit", dest = "data", conflicts = "overwrite"),
-drones_download(data = "pat", dest = "data", conflicts = "overwrite")
+drones_download(data = "pat", dest = "data", conflicts = "overwrite")}
 }

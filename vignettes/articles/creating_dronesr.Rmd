@@ -22,9 +22,9 @@ library(dronesr)
 
 ### Creating dronesr
 
-This article describes the process for creating the `dronesr` data and package. 
+This article describes the process for creating the `dronesr` data and package.
 
-The `dronesr` package is created using the open access Lens database operated by the non-profit CAMBIA in Australia. The WIPO patent analytics team commonly use the Lens in patent analytics training workshops because it is easy to use, provides large scale access to data and contains important data fields, such as citations, that are not available elsewhere. 
+The `dronesr` package is created using the open access Lens database operated by the non-profit CAMBIA in Australia. The WIPO patent analytics team commonly use the Lens in patent analytics training workshops because it is easy to use, provides large scale access to data and contains important data fields, such as citations, that are not available elsewhere.
 
 This article explains the process through which the `dronesr` package was built focusing on the use of the Lens public interface.
 
@@ -34,7 +34,7 @@ We start by going to the Lens home page. If you do not have a free Lens account 
 knitr::include_graphics("front.png")
 ```
 
-Choose Structured search and then enter the term drone or drones as in the figure below. Makes sure that you change the predicate from the default `AND` to `OR`. At the bottom turn `stemmed` to off. Stemmed will reduce the search term to its root meaning in this case that you will get search results for terms like droning... which we don't want. 
+Choose Structured search and then enter the term drone or drones as in the figure below. Makes sure that you change the predicate from the default `AND` to `OR`. At the bottom turn `stemmed` to off. Stemmed will reduce the search term to its root meaning in this case that you will get search results for terms like droning... which we don't want.
 
 Note that this approach will search all text fields including the applicant names that may contain the term drones. We do this because we want to demonstrate how to clean up data later on. It is also of course pretty certain that applicant names that contain the term drone will be working on drone technology. Take some time to familiarise yourself with the different search fields such as title, abstract and claims and description searching. Those are the fields that we normally focus on in patent analytics.
 
@@ -42,7 +42,7 @@ Note that this approach will search all text fields including the applicant name
 knitr::include_graphics("search.png")
 ```
 
-The result of this search is a set of 101,584 patent documents (applications, grants, search reports and so on). These documents will include many republications of the same document (as applications, as grants, with search reports and so on). We therefore want to remove the duplication to focus in as far as possible on the original filings. 
+The result of this search is a set of 101,584 patent documents (applications, grants, search reports and so on). These documents will include many republications of the same document (as applications, as grants, with search reports and so on). We therefore want to remove the duplication to focus in as far as possible on the original filings.
 
 For our purposes we will choose the Simple families. Click on simple families.
 
@@ -50,7 +50,7 @@ For our purposes we will choose the Simple families. Click on simple families.
 knitr::include_graphics("results.png")
 ```
 
-We can export up to 50,000 records from the Lens, which is great, but we have 51,177 records. To address this we will use the Date Range filter to limit the data by publication year to between the start of 1990 and the end of 2021 as in the image below. 
+We can export up to 50,000 records from the Lens, which is great, but we have 51,177 records. To address this we will use the Date Range filter to limit the data by publication year to between the start of 1990 and the end of 2021 as in the image below.
 
 ```{r date, echo=FALSE, fig.align='center', fig.cap="Restrict the data to 1990 to 2021"}
 knitr::include_graphics("limit.png")
@@ -58,7 +58,7 @@ knitr::include_graphics("limit.png")
 
 This brings the data to 49,243 records. We can create collection of these records by Clicking on the tick mark under Patents and next to Expand and choosing `All Results`. When we have selected all of the results we will see a `Create Collection` icon. If we click on that we can create a collection. Here we create a public collection that anyone can access. You can access that collection at the link below. This shareable link is created by choosing Access when the collection has been created as in the image below.
 
-[https://www.lens.org/lens/search/patent/list?collectionId=199031](https://www.lens.org/lens/search/patent/list?collectionId=199031)
+<https://www.lens.org/lens/search/patent/list?collectionId=199031>
 
 ```{r collection, echo=FALSE, fig.align='center', fig.cap="Create a Collection"}
 knitr::include_graphics("share.png")
@@ -70,7 +70,7 @@ When the collection has been created we are in a position to download all of the
 knitr::include_graphics("export.png")
 ```
 
-For larger results sets such as this the Lens will email the dataset link to you. If you do not create an account you will only be able to export a smaller amount. 
+For larger results sets such as this the Lens will email the dataset link to you. If you do not create an account you will only be able to export a smaller amount.
 
 ## Additional Data
 
@@ -100,9 +100,9 @@ knitr::include_graphics("citingpat.png")
 
 ### Scientific Literature
 
-We will normally want to obtain the scientific literature on a topic of interest to inform patent analysis. 
+We will normally want to obtain the scientific literature on a topic of interest to inform patent analysis.
 
-We turn to the lens scholarly interface to search the literature as in the image below. As with the patent data we will search all fields. But take the time to check out the options that can be used here. 
+We turn to the lens scholarly interface to search the literature as in the image below. As with the patent data we will search all fields. But take the time to check out the options that can be used here.
 
 ```{r litsearch, echo=FALSE, fig.align='center', fig.cap="Use Lens Scholarly to Search for Literature"}
 knitr::include_graphics("litsearch.png")
@@ -112,6 +112,6 @@ knitr::include_graphics("litsearch.png")
 knitr::include_graphics("lit.png")
 ```
 
-This gives us 45,256 results as we see above. We then use export to download the file to lit stored in the data/raw folder. 
+This gives us 45,256 results as we see above. We then use export to download the file to lit stored in the data/raw folder.
 
-The literature collection is publicly accessible at [https://www.lens.org/lens/search/scholar/list?collectionId=199039](https://www.lens.org/lens/search/scholar/list?collectionId=199039).
+The literature collection is publicly accessible at <https://www.lens.org/lens/search/scholar/list?collectionId=199039>.

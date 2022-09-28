@@ -1,4 +1,4 @@
-#' Download csv files for the Literature and Patent datasets
+#' @title Download csv files for the Literature and Patent datasets
 #' @description Download folders containing scientific publications and patent
 #'   data for drones from the open science framework project folder
 #'   \url{https://osf.io/jr87e/}.
@@ -15,9 +15,11 @@
 #' @importFrom osfr osf_download
 #' @importFrom usethis ui_info
 #' @importFrom usethis ui_done
-#' @examples drones_download(data = "all", dest = "data", conflicts = "overwrite"),
+#' @importFrom usethis ui_value
+#' @importFrom glue glue
+#' @examples \dontrun{drones_download(data = "all", dest = "data", conflicts = "overwrite"),
 #' drones_download(data = "lit", dest = "data", conflicts = "overwrite"),
-#' drones_download(data = "pat", dest = "data", conflicts = "overwrite")
+#' drones_download(data = "pat", dest = "data", conflicts = "overwrite")}
 drones_download <- function(data = NULL, dest = NULL, conflicts = "overwrite") {
 
   # check that the dest file exists and if not create it
@@ -42,8 +44,8 @@ drones_download <- function(data = NULL, dest = NULL, conflicts = "overwrite") {
   if(!is.null(dest)) {
     if (!dir.exists(dest)){
       dir.create(dest)
-      dir.create(path = glue::glue("{dest}/lit"))
-      dir.create(path = glue::glue("{dest}/pat"))
+      dir.create(path = glue("{dest}/lit"))
+      dir.create(path = glue("{dest}/pat"))
 
       ui_info("{ui_value(dest)} dir created with lit and pat folders")
     } else {
@@ -55,13 +57,13 @@ drones_download <- function(data = NULL, dest = NULL, conflicts = "overwrite") {
 
     drones_lit <- osf_retrieve_node("https://osf.io/96w8j/")
     drones_lit_files <- osf_ls_files(drones_lit)
-    osf_download(drones_lit_files, path = glue::glue("{dest}/lit"), conflicts = conflicts)
+    osf_download(drones_lit_files, path = glue("{dest}/lit"), conflicts = conflicts)
 
     ui_done("literature files downloaded in lit/csv and lit/rds folders")
 
     drones_pat <- osf_retrieve_node("https://osf.io/e6h8x/")
     drones_pat_files <- osf_ls_files(drones_pat)
-    osf_download(drones_pat_files, path = glue::glue("{dest}/pat"), conflicts = conflicts)
+    osf_download(drones_pat_files, path = glue("{dest}/pat"), conflicts = conflicts)
 
     ui_done("literature files downloaded in pat/csv and pat/rds folders")
 
@@ -71,7 +73,7 @@ drones_download <- function(data = NULL, dest = NULL, conflicts = "overwrite") {
 
     drones_lit <- osf_retrieve_node("https://osf.io/96w8j/")
     drones_lit_files <- osf_ls_files(drones_lit)
-    osf_download(drones_lit_files, path = glue::glue("{dest}/lit"), conflicts = conflicts)
+    osf_download(drones_lit_files, path = glue("{dest}/lit"), conflicts = conflicts)
 
     ui_done("literature files downloaded into lit/csv and lit/rds folders")
 
@@ -81,7 +83,7 @@ drones_download <- function(data = NULL, dest = NULL, conflicts = "overwrite") {
 
     drones_pat <- osf_retrieve_node("https://osf.io/e6h8x/")
     drones_pat_files <- osf_ls_files(drones_pat)
-    osf_download(drones_pat_files, path = glue::glue("{dest}/pat"), conflicts = conflicts)
+    osf_download(drones_pat_files, path = glue("{dest}/pat"), conflicts = conflicts)
 
     ui_done("patent files downloaded in csv and rds folders")
 

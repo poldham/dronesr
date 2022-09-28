@@ -4,18 +4,19 @@ Title: Scientific and Patent Datasets on Drones for Analytics Training
 Version: 0.1.0
 Author: Paul Oldham
 Maintainer: Paul Oldham <pauloldham@manchester.ac.uk>
-Description: Download Scientific publication and patent data on drones technology.
+Description: Download Scientific publication and patent data on drones technology from the Lens database.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/poldham/dronesr,
     https://poldham.github.io/dronesr/
 BugReports: https://github.com/poldham/dronesr/issues
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Imports: 
     magrittr,
     osfr,
-    usethis
+    usethis,
+    glue
 Suggests: 
     rmarkdown,
     knitr

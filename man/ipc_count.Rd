@@ -5,7 +5,7 @@
 \alias{ipc_count}
 \title{count of international patent classification (ipc) dataset}
 \format{
-A data frame with 512 rows and 2 variables:
+A data frame with 520 rows and 2 variables:
 \describe{
 \item{description}{}
 \item{n}{}

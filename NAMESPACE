@@ -2,9 +2,11 @@
 
 export("%>%")
 export(drones_download)
+importFrom(glue,glue)
 importFrom(magrittr,"%>%")
 importFrom(osfr,osf_download)
 importFrom(osfr,osf_ls_files)
 importFrom(osfr,osf_retrieve_node)
 importFrom(usethis,ui_done)
 importFrom(usethis,ui_info)
+importFrom(usethis,ui_value)

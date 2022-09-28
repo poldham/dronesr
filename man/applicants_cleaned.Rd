@@ -5,11 +5,10 @@
 \alias{applicants_cleaned}
 \title{applicants cleaned name dataset}
 \format{
-A data frame with 31126 rows and 3 variables:
+A data frame with 63243 rows and 2 variables:
 \describe{
 \item{lens_id}{}
 \item{applicants_cleaned}{}
-\item{records}{}
 }
 }
 \source{
@@ -19,6 +18,7 @@ A data frame with 31126 rows and 3 variables:
 applicants_cleaned
 }
 \description{
-A dataset of 31126 rows of cleaned applicant names with .
+A dataset of cleaned applicant names. The names
+have been separated onto individual rows per record.
 }
 \keyword{datasets}

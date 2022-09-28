@@ -5,7 +5,7 @@
 \alias{applicants_ranked}
 \title{applicants ranked dataset}
 \format{
-A data frame with 31126 rows and 3 variables:
+A data frame with 20176 rows and 2 variables:
 \describe{
 \item{applicants}{}
 \item{n}{}
@@ -18,8 +18,7 @@ A data frame with 31126 rows and 3 variables:
 applicants_ranked
 }
 \description{
-A dataset of cleaned applicant names. Names were cleaned in VantagePoint in
-two steps using fuzzy matching on shared priority numbers followed by shared
-inventor names.
+The applicants cleaned dataset ranked by number of
+records. The top result is blank (NA).
 }
 \keyword{datasets}

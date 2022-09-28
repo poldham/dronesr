@@ -50,7 +50,7 @@ devtools::install_github("poldham/dronesr")
 ## Downloading Datasets
 
 All datasets are included in the package in a compressed R format and
-can be access by simply loading `library(lensr)`. However, if you want
+can be access by simply loading `library(dronesr)`. However, if you want
 to use the data outside R in Python, Tableau or other tools you are
 likely to want to use csv format versions of the data.
 
@@ -90,11 +90,12 @@ text analysis:
 As with the scientific literature patent data operates a citation
 system. Citations take three forms and are included with the package.
 
--   pat_cited. Patents cited in the core pat set. These back citations
-    are to patent documents that shape what is claimed in the core set.
--   pat_citing. These are later filings that cite the core set. These
-    forward citations are documents that are shaped by the prior art in
-    the core set.
+-   pat_cited. Patents cited in the core patent set (pat). These are
+    back citations to patent documents constituting prior art that shape
+    what can be claimed in the core set.
+-   pat_citing. These are later filings that cite the core (pat) set.
+    These forward citations are documents that are shaped by the prior
+    art in the core set.
 -   npl. NPL stands for non-patent literature which means citations to
     literature, websites, manuals etc that are not patent documents. In
     `dronesr` the npl dataset consists of scientific literature that is

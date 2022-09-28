@@ -1,41 +1,43 @@
-#' applicants cleaned name dataset
-#'
-#' A dataset of 31126 rows of cleaned applicant names with .
-#'
-#' @format A data frame with 31126 rows and 3 variables:
-#' \describe{
-#' \item{lens_id}{}
-#' \item{applicants_cleaned}{}
-#' \item{records}{}
-#' }
-#' @source \url{https://www.lens.org/}
-"applicants_cleaned"
-
-#' applicants ranked dataset
-#'
-#' A dataset of cleaned applicant names. Names were cleaned in VantagePoint in
-#' two steps using fuzzy matching on shared priority numbers followed by shared
-#' inventor names.
-#'
-#' @format A data frame with 31126 rows and 3 variables:
-#' \describe{
-#' \item{applicants}{}
-#' \item{n}{}
-#' }
-#' @source \url{https://www.lens.org/}
-"applicants_ranked"
-
 #' applicants dataset
 #'
-#' A ranked dataset of cleaned applicant names.
+#' A dataset of applicant names that have been cleaned in VantagePoint
+#' based on a shared priority number and then shared inventor name.
+#' The separator for names in the records is "|" not ";;" as in the raw
+#' Lens data.
 #'
-#' @format A data frame with 31126 rows and 3 variables:
+#' @format A data frame with 49411 rows and 2 variables:
 #' \describe{
 #' \item{lens_id}{}
 #' \item{applicants}{}
 #' }
 #' @source \url{https://www.lens.org/}
 "applicants"
+
+#' applicants cleaned name dataset
+#'
+#' A dataset of cleaned applicant names. The names
+#' have been separated onto individual rows per record.
+#'
+#' @format A data frame with 63243 rows and 2 variables:
+#' \describe{
+#' \item{lens_id}{}
+#' \item{applicants_cleaned}{}
+#' }
+#' @source \url{https://www.lens.org/}
+"applicants_cleaned"
+
+#' applicants ranked dataset
+#'
+#' The applicants cleaned dataset ranked by number of
+#' records. The top result is blank (NA).
+#'
+#' @format A data frame with 20176 rows and 2 variables:
+#' \describe{
+#' \item{applicants}{}
+#' \item{n}{}
+#' }
+#' @source \url{https://www.lens.org/}
+"applicants_ranked"
 
 #' patent documents cited in the core pat dataset
 #'
@@ -154,7 +156,18 @@
 #' @source \url{https://www.lens.org/}
 "inventors"
 
-"ipc"
+#' inventors ranked
+#'
+#' A dataset of cleaned inventor names
+#' ranked on number of re ords
+#'
+#' @format A data frame with 72584 rows and 2 variables:
+#' \describe{
+#' \item{n}{}
+#' \item{inventors}{}
+#' }
+#' @source \url{https://www.lens.org/}
+"inventors_ranked"
 
 #' international patent classification (ipc) dataset
 #'
@@ -178,7 +191,7 @@
 #'
 #' A dataset of international patent classification subclass codes with count.
 #'
-#' @format A data frame with 512 rows and 2 variables:
+#' @format A data frame with 520 rows and 2 variables:
 #' \describe{
 #' \item{description}{}
 #' \item{n}{}
